@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact with us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Dela Gothic One', sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #ffffffcb; 
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(0, 0, 0, 0.607) !important;
+        }
+        .navbar {
+    background-image: url("abstract-yellow-gradient-background-vector.jpg");
+    background-size: cover; 
+    text-align: center;
+    color: #000000; 
+}
+        button {
+            padding: 10px 20px;
+            background-color: #292213;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form {
+            color: #040404a5; 
+        }
+        h1 {
+            color: #060606cb; 
+        }
+
+        .navbar {
+            background-image: url("abstract-yellow-gradient-background-vector.jpg");
+            text-align: center;
+            color: #000000; 
+        }
+
+        footer {
+            background-color: #ffffff;
+            color: #282727;
+            text-align: center;
+            font-size: 30px ;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color: #000;">W Nutritions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars" style="color: #000000;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Our Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <label for="name" style="color: #000;">Your Name:</label>
+            <input type="text" id="name" name="name">
+    
+            <label for="email" style="color: #000;">Your Email:</label>
+            <input type="text" id="email" name="email">
+    
+            <label for="message" style="color: #000;">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+    
+            <button type="submit" class="btn btn-outline-dark">Send</button>
+        </form>
+        <div id="success-message" class="alert alert-success" role="alert" style="display: none;">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Congrats! You've successfully submitted the form. We will definitely contact you soon.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            document.getElementById("contact-form").style.display = "none";
+
+            document.getElementById("success-message").style.display = "block";
+        });
+    </script>
+
+<footer class="mt-5">
+    <div class="container">
+        <p>&copy; W Nutritions</p>
+    </div>
+</footer>
+</body>
+</html>
